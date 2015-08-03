@@ -1,0 +1,287 @@
+/* #Tablet (Portrait)
+================================================== */
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:13px; background-color:#f7f7f7
+}
+.wrapper {
+	float:left;
+	width:100%
+}
+.topbar_outer {
+	float:left;
+	width:100%;
+	height:34px;
+	background-color:#4a0114
+}
+.topbar_inner {
+	margin:0 auto;
+	width:950px;
+	text-align:right;
+	color:#FFFFFF;
+	line-height:32px
+}
+.topbar_inner span {
+	font-weight:bold;
+	font-size:20px;
+}
+.header_wrapper {
+	float:left;
+	width:100%;
+	height:90px;
+	background-image: url(../images/header_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.header_inner {
+	width:950px;
+	margin:0 auto;
+}
+.logo {
+	float:left;
+	width:254px;
+	height:84px;
+	margin-top:3px
+}
+.logo img {
+	max-width:100%
+}
+.banner_wrapper {
+	float:left;
+	width:100%;
+	
+	background-image: url(../images/banner_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+.banner_inner {
+	width:950px;
+	margin:0 auto;
+}
+.banner {
+	float:left; text-align:center
+}
+.banner img {
+	max-width:100%
+}
+.login_section {
+	background-color: #e6e6e6;
+	float: left;
+	height: 508px;
+	margin-top:-73px;
+	width: 344px;
+	border:solid 5px #fff;
+}
+.login_header {
+	width:100%;
+	background-image: url(../images/login_title_bg.png);
+	background-repeat: repeat-x;
+	background-position: center top;
+	float:left;
+	padding-top:10px; background-color:#241f20
+}
+.login_header img {
+	margin-top:-17px
+}
+.arrow {
+	float:left; width:62px !important
+}
+.arrow img {
+	margin-top:-27px
+}
+.title {
+	float:left;
+	color:#FFFFFF; width:250px !important; font-size:12px
+}
+.title span {
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-size:15px;
+}
+.information_form {
+	float:left;
+	padding:5%;
+	width:90%
+}
+.information_form label {
+	float:left;
+	width:100%;
+	margin:10px 0 5px 0;
+	font-size:14px;
+	font-weight:bold
+}
+.information_form select {
+	float:left;
+	width:100%;
+	background-color:#FFFFFF;
+	border:#CCCCCC solid 1px;
+	padding:7px 5px
+}
+.information_form input {
+	float:left;
+	width:95%;
+	background-color:#FFFFFF;
+	border:#CCCCCC solid 1px;
+	padding:7px 5px
+}
+.information_form input.submit {
+	float:left;
+	width:98%;
+	background-color:#FFFFFF;
+	border:#CCCCCC solid 1px;
+	padding:7px 5px;
+	margin-top:10px;
+	background-image: url(../images/button_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: left top;
+	font-size:30px; font-weight:bold;
+	color:#FFFFFF; border-radius:5px
+}
+.body_wrapper{ float:left; width:100%}
+.body_inner{ margin:0 auto; width:950px;}
+.content_left{ float:left; width:580px; margin-top:-167px;}
+.content_right{ float:right; width:350px; margin-top:20px}
+.login_section_outer{ float:left; width:350px} 
+.form_notes{ font-size:11px; color:#a2a2a2; font-style:italic; float:left; padding: 0 5px;}
+h1{ color: #572D38;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase; width:100%; border-bottom: solid 1px #a51c3e; padding-bottom:10px}
+.content_left strong{color: #572D38;
+    font-size: 13px;
+    font-weight: bold;
+    }
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+ .header_wrapper {
+ float:left;
+ width:100%;
+ height:90px;
+ background-image: none;
+ background-color: red;
+}
+}
+
+    @media only screen and (max-width: 420px) {
+	.arrow {
+	float:left; width:40px !important
+}
+	.arrow img{ margin-top:-22px
+}
+.title {
+    color: #FFFFFF;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    width: 80% !important;
+}
+	}
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+ .topbar_inner {
+width:95%;
+padding:5px
+}
+.header_inner {
+width:95%;
+}
+.banner_inner {
+width:95%;
+}
+ .header_wrapper {
+ float:left;
+ width:100%;
+ height:90px;
+/* background-image: none;
+ background-color: green;*/
+}
+.banner {
+width:100%;
+}
+ .login_section {
+ background-color: #E6E6E6;
+ border: 5px solid #FFFFFF;
+ float: left;
+ height: 508px;
+ margin-top: 15px;
+ width: 97%;
+}
+.logo {
+ margin: 0 auto !important;
+ text-align: center;
+ width: 95%;
+float:none
+}
+.topbar_outer {
+ width:100%;
+ height:auto;
+text-align:center
+}
+.topbar_inner {
+ line-height:20px;
+text-align:center
+}
+.body_inner{ margin:0 auto; width:95%;}
+.content_left{ float:left; width:100%; margin-top:0px;}
+.content_right{ float:right; width:100%; margin-top:20px}
+.login_section_outer{ float:left; width:100%} 
+.login_section_outer img{ max-width:100%} 
+
+
+
+
+
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+ .topbar_inner {
+width:95%;
+}
+.header_inner {
+width:95%;
+}
+.banner_inner {
+width:95%;
+}
+}
+ @media only screen and (min-width: 1024px) and (max-width: 1400px) {
+.homethumb {
+margin-right:10px;
+float:left;
+width:190px
+}
+.arrow {
+	float:left; width:50px
+}
+
+.title {
+	float:left;
+	color:#FFFFFF; width:200px; font-size:12px
+}
+}
+/* #Clearing
+================================================== */
+
+    .clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}

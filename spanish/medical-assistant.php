@@ -1,0 +1,118 @@
+<?php include 'includes/tfn.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Medical Assistant</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/banner/flexslider.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/expand.js"></script>
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+$j(function() {
+    $j("#demo1 h3.expand").toggler();
+    $j("#demo2 h3.expand").toggler({initShow: "div.collapse:eq(0)"});
+
+    $j("#demo1").expandAll({
+      trigger: "h3.expand",
+      ref: "h3.expand",
+      showMethod: "slideDown",
+      hideMethod: "slideUp"
+    });
+    $j("#demo2").expandAll({
+      trigger: "h3.expand",
+      ref: "h3.expand",
+      showMethod: "slideDown",
+      hideMethod: "slideUp",
+      oneSwitch : false
+    });
+});
+
+</script>
+
+
+</head>
+
+<body>
+<?php include 'includes/tagmanager.php'; ?>
+<div id="wrapper" class="innerpage"> 
+  <!-- header starts -->
+
+       <?php include 'includes/menu.php'; ?>
+      </div>
+    </div>
+  </div>
+  <div class="banner_wrapper banner_wrapperinner med-ass">
+    <div class="banner_inner">
+      <div class="banner">
+        <div class="slide banner1" >
+          <div class="info">
+            <!--<h2 class="bannertitle">Get the career <br>
+              training you need! </h2>
+            <h3 class="bannertitle"> Advance your Career. </h3>-->
+          </div>
+         <!-- <img class="form_btm" src="images/banner_inner.png">--> </div>
+      </div>
+        <?php include 'includes/form.php'; ?>
+          <div style="clear:both"></div>
+  <!-- body starts -->
+  <div class="body_wrapper">
+    <div class="body_inner">
+      <div class="content_left_inner">
+        <h2 class="tag1">Asistente Médico</h2>
+   <p>El programa de asistente médico en Florida Vocational Institute te prepara para una emocionante carrera en la industria de la salud. Prestar asistencia médica es una de las posiciones de la salud más populares que se proyecta crezca en los próximos años. Según la Oficina de Estadísticas Laborales, se espera que las tasas de empleo de los asistentes de médicos crecerá un 31% entre el  2010 y 2020.  Florida Vocational Institute se compromete a proporcionar a sus estudiantes con el mejor entrenamiento para que estén calificados y puedan tomar ventaja de estas oportunidades de empleo! Nuestros egresados ​​están capacitados para los puestos de entrada en hospitales, consultorios médicos, clínicas de atención de urgencia, y varias otras instalaciones médicas en todos los aspectos relevantes de la administración, laboratorios y procedimientos clínicos.</p>
+<strong>Estos incluyen:  </strong><br>
+<br>
+        <ul>
+<li>Contabilidad, administración de registros médicos, inventarios de suministros médicos, y la programación de citas.</li>     	
+<li>La comprensión de las reclamaciones de seguros, facturación y pedidos de recetas medicas</li>   
+<li>Preparación de pacientes para los exámenes</li>
+<li>La finalización de las tareas clínicas de rutina, tales como actualizar la historia clínica del paciente, el cheque de los signos vitales, presión arterial, altura, temperatura y peso</li>
+<li>Capacidad para realizar pruebas médicas y de laboratorio, incluyendo análisis de orina, flebotomía, y radiografías limitadas</li>
+<li>Finalización de las muestras de sangre, inyecciones, y la retirada de sutura</li>
+
+</ul>
+        
+  
+<p>En Florida Vocational Institute, recibirás una educación integral en un ambiente de apoyo. Ven a explorar el mundo de la salud mediante una carrera de Asistente Médico con nosotros!</p>
+        <div style="clear:both"></div>
+       
+        
+    <div style="clear:both"></div>     
+      </div>
+      <div class="content_right mtopinnerright">
+        
+    
+       <div class="rightwhycontent">
+<?php include 'includes/why.php'; ?>
+
+</div>
+       
+
+        </div>
+         <div style="clear:both"></div>
+       
+       
+       
+       
+    </div>
+  </div>
+  <!-- body ends -->
+  <div class="footer_wrapper">
+    <div class="footer_inner">
+	<div class="left">
+    © <?php include 'includes/footer.php'; ?></div>
+</div>
+  </div>
+  <div style=" clear:both"></div>
+</div>
+<script src="js/AC_ActiveX.js" type="text/javascript"></script> 
+<script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
+<?php include 'includes/ynot-api.php'; ?>
+</body>
+</html>

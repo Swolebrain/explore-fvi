@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Internet Explorer Select Width Bug Workaround Demo - JainaEwen.com</title>
+<meta name="keywords" content="internet explorer,select,select width,select width,select fixed width,select option,select bug" />
+<meta name="description" content="This jQuery plugin proposes a workaround for Internet Explorer's fixed width select bug." />
+<!--<link rel="stylesheet" type="text/css" href="main.css" />-->
+<link rel="stylesheet" type="text/css" href="demo.css" />
+<script type="text/javascript" src="jquery.1-4-2.min.js"></script>
+<script type="text/javascript" src="jquery.ie-select-width.js"></script>
+<!--[if lte ie 6]>
+<script type="text/javascript" src="jquery.bgiframe.js"></script>
+<![endif]-->    
+<script type="text/javascript">
+$(function ()
+{
+    // Set the width via the plugin.
+    $('select#fixed-select-no-css').ieSelectWidth
+    ({
+        width : 200,
+        containerClassName : 'select-container',
+        overlayClassName : 'select-overlay'
+    });
+    
+    // Set the width via CSS.
+    $('select#fixed-select-css').ieSelectWidth
+    ({
+        containerClassName : 'select-container',
+        overlayClassName : 'select-overlay'
+    });
+    
+    // Borders and padding etc for Internet Explorer 6/7.
+    $('select#select-styleable').ieSelectWidth
+    ({
+        containerClassName : 'select-container',
+        overlayClassName : 'select-overlay'
+    });
+});
+</script>
+</head>
+
+<body>
+
+<h1>Internet Explorer Select Width Bug Workaround Demo</h1>
+<p><a href="/contact.html">Contact me here</a> with any queries or bug reports etc.</p>
+<p><strong>Obviously this page should be viewed with Internet Explorer in order to see these examples working.</strong></p>
+
+<h2>Examples</h2>
+<form id="select-no-css" action="#">
+    <fieldset>
+        <legend>Example one</legend>
+        <p>Set the select with via the plugin (pixel only.)</p>
+        <dl>
+            <dt><label for="unfixed-select-no-css">Unfixed select</label></dt>
+            <dd>
+                <select name="unfixed-select-no-css" id="unfixed-select-no-css">
+                    <option value="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet euismod metus?</option>
+                    <option value="b">Etiam ultrices sollicitudin justo, egestas adipiscing magna laoreet ut.</option>
+                    <option value="c">In sit amet euismod metus? In dignissim eros id nisi dignissim volutpat. </option>
+                </select>
+            </dd>
+            
+            <dt><label for="fixed-select-no-css">Fixed select</label></dt>
+            <dd>
+                <select name="fixed-select-no-css" id="fixed-select-no-css">
+                    <option value="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet euismod metus?</option>
+                    <option value="b">Etiam ultrices sollicitudin justo, egestas adipiscing magna laoreet ut.</option>
+                    <option value="c">In sit amet euismod metus? In dignissim eros id nisi dignissim volutpat. </option>
+                </select>
+            </dd>
+        </dl>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Example two</legend>
+        <p>Set the select with via CSS.</p>
+        <dl>
+            <dt><label for="unfixed-select-css">Unfixed select</label></dt>
+            <dd>
+                <select name="unfixed-select-css" id="unfixed-select-css">
+                    <option value="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet euismod metus?</option>
+                    <option value="b">Etiam ultrices sollicitudin justo, egestas adipiscing magna laoreet ut.</option>
+                    <option value="c">In sit amet euismod metus? In dignissim eros id nisi dignissim volutpat. </option>
+                </select>
+            </dd>
+            
+            <dt><label for="fixed-select-css">Fixed select</label></dt>
+            <dd>
+                <select name="fixed-select-css" id="fixed-select-css">
+                    <option value="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet euismod metus?</option>
+                    <option value="b">Etiam ultrices sollicitudin justo, egestas adipiscing magna laoreet ut.</option>
+                    <option value="c">In sit amet euismod metus? In dignissim eros id nisi dignissim volutpat. </option>
+                </select>
+            </dd>
+        </dl>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Example three</legend>
+        <p>Compensates for margin, left/right top/bottom and borders and padding (borders and padding only applies to IE 8.)</p>
+        <dl>
+            <dt><label for="select-styleable">Fixed select</label></dt>
+            <dd>
+                <select name="select-styleable" id="select-styleable">
+                    <option value="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet euismod metus?</option>
+                    <option value="b">Etiam ultrices sollicitudin justo, egestas adipiscing magna laoreet ut.</option>
+                    <option value="c">In sit amet euismod metus? In dignissim eros id nisi dignissim volutpat. </option>
+                </select>
+            </dd>
+        </dl>
+    </fieldset>
+</form>
+</body>
+</html>
