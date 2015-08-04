@@ -244,7 +244,30 @@
 				 $('#step1').hide();
 				 $('#step2').hide();
 				 $('#step3').show();
-				 $('#frm_post').submit();
+				 /**********Victor's Code to send form to Velocify ***************/
+				var xhr = new XMLHttpRequest();
+				xhr.open('POST', 'https://secure.velocify.com/Import.aspx?Provider=ExploreFVI&Client=30010&CampaignId=1033', true);
+				xhr.onload = function () {
+						console.log(this.responseText);
+				}
+				//$('#program_id').val()  $('#first_name').val()  $('#last_name').val()
+				//$('#day_phone').val()  $('#email').val()  $('#refer').val()
+				// $('#address').val()  $('#city').val()  $('#state_id').val()  $('#zipcode').val()
+				var queryString = "&ProgramName="+$("#program_id option:selected").text();
+				queryString += "&FirstName="+$('#first_name').val();
+				queryString += "&LastName="+$('#last_name').val();
+				queryString += "&Email="+$('#email').val();
+				queryString += "&MainPhone="+$('#day_phone').val();
+				//queryString += "&LastName="+$('#refer').val();
+				queryString += "&Street1="+$('#address').val();
+				queryString += "&City="+$('#city').val();
+				queryString += "&State="+$('#state_id').val();
+				queryString += "&ZipCode="+$('#zipcode').val();
+				
+				xhr.send(queryString);
+				/*********************Sending to Ynot *********************/
+				
+				$('#frm_post').submit();
 			}
       });
       

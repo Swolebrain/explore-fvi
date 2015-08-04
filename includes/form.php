@@ -19,91 +19,75 @@
             </div>  
           </div>
           
-          <script type="text/javascript">
-function CheckForm(theform)
-{
-
-//  alert('CheckForm');
-
-
-
-
-    if(theform.level_of_education_id.value == "")
-    {
-    alert("Please enter your level of education");
-    theform.level_of_education_id.focus();
-        return false;
-    }
-    
-    if(theform.program_id.value == "")
-    {
-    alert("Please enter your program of interest");
-    theform.program_id.focus();
-        return false;
-    }
-
-    if(theform.inf_field_FirstName.value == "")
-    {
-    alert("Please enter your first name");
-    theform.inf_field_FirstName.focus();
-        return false;
-    }
-
-    if(theform.inf_field_LastName.value == "")
-    {
-    alert("Please enter your last name");
-    theform.inf_field_LastName.focus();
-        return false;
-    }
-
-    if(theform.inf_field_phone.value == "")
-    {
-    alert("Please enter your phone number");
-    theform.inf_field_phone.focus();
-        return false;
-    }
-
-    if(theform.inf_field_Email.value == "")
-    {
-    alert("Please enter your email address");
-    theform.inf_field_Email.focus();
-        return false;
-    }
-    if(theform.inf_field_Email.value.length > 0 )
-    {
-      var pattern=/^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
-        if(!pattern.test(theform.inf_field_Email.value))
-        {
-          alert("Please enter valid email address");
-        theform.inf_field_Email.focus();
-            return false;
-        }
-
-
-}}
-function setloc(m)
-{
-    //alert(m.value);
-        var e = m.value;
-//var strUser = e.options[e.selectedIndex].value;
-//alert(strUser);
-        if(e == 5167 || e ==4826 || e ==4897 || e ==5168)
-         {
-             document.getElementById("location_id").value=1169;
-//alert('eng');
-    //    alert(document.getElementById("location_id").val);
-
-         }
-	else
-	{
-            document.getElementById("location_id").value=875;
-//alert('spa');
-// alert(document.getElementById("location_id").val);
-        
-	}
-   
-}
-</script>
+		  <script type="text/javascript">
+	  function CheckForm(theform) {
+	  
+		  if (theform.level_of_education_id.value == "") {
+			  alert("Please enter your level of education");
+			  theform.level_of_education_id.focus();
+			  return false;
+		  }
+	  
+		  if (theform.program_id.value == "") {
+			  alert("Please enter your program of interest");
+			  theform.program_id.focus();
+			  return false;
+		  }
+	  
+		  if (theform.inf_field_FirstName.value == "") {
+			  alert("Please enter your first name");
+			  theform.inf_field_FirstName.focus();
+			  return false;
+		  }
+	  
+		  if (theform.inf_field_LastName.value == "") {
+			  alert("Please enter your last name");
+			  theform.inf_field_LastName.focus();
+			  return false;
+		  }
+	  
+		  if (theform.inf_field_phone.value == "") {
+			  alert("Please enter your phone number");
+			  theform.inf_field_phone.focus();
+			  return false;
+		  }
+	  
+		  if (theform.inf_field_Email.value == "") {
+			  alert("Please enter your email address");
+			  theform.inf_field_Email.focus();
+			  return false;
+		  }
+		  if (theform.inf_field_Email.value.length > 0) {
+			  var pattern = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
+			  if (!pattern.test(theform.inf_field_Email.value)) {
+				  alert("Please enter valid email address");
+				  theform.inf_field_Email.focus();
+				  return false;
+			  }
+		  }
+		  
+		  
+	  }
+	  
+	  function setloc(m) {
+		  //alert(m.value);
+		  var e = m.value;
+		  //var strUser = e.options[e.selectedIndex].value;
+		  //alert(strUser);
+		  if (e == 5167 || e == 4826 || e == 4897 || e == 5168) {
+			  document.getElementById("location_id").value = 1169;
+			  //alert('eng');
+			  //    alert(document.getElementById("location_id").val);
+	  
+		  } else {
+			  document.getElementById("location_id").value = 875;
+			  //alert('spa');
+			  // alert(document.getElementById("location_id").val);
+	  
+		  }
+	  
+	  }
+		  </script>
           <div class="information_form">
             <form action="http://api.ynotlms.com/leads.redirect" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">
             <!--<form action="mail.php" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">-->
@@ -117,15 +101,15 @@ function setloc(m)
 	              <select  class="input_1" name="program_id" id="program_id"  onchange="setloc(this)">
 	                <option value="" selected="">Choose a Program First</option>
                     <option value="5167">IT Security and Cloud Professional Engineering</option>
-<option value="5168">Web & Application Development Engineering</option>                    
-<option value="4826">Medical Assistant Online</option>
+					<option value="5168">Web and Application Development Engineering</option>                    
+					<option value="4826">Medical Assistant Online</option>
                     <option value="4897">Pharmacy Technician</option>
                     <option value="2213">Nursing Assistant /Home Health Aide</option>
                    
                     <option value="2211">Medical Assistant</option>
                     <option value="2212">Patient Care Technician</option>
 	              </select>
-<input type="hidden"  class="input_1"  name="location_id" id="location_id" >
+				  <input type="hidden"  class="input_1"  name="location_id" id="location_id" >
               </span>
               <span id="step2" style="display:none">
               	  <div class="left">
