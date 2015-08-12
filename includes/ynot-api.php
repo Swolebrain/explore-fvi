@@ -238,8 +238,8 @@
 			       
 			    }
 			    var street1 = $('#street1').val();
-                        var street2 = $('#street2').val();
-	                        $('#address').val(street1+', '+street2);
+                var street2 = $('#street2').val();
+	            $('#address').val(street1+', '+street2);
 	                        
 				 $('#step1').hide();
 				 $('#step2').hide();
@@ -266,8 +266,10 @@
 				
 				xhr.send(queryString);
 				/*********************Sending to Ynot *********************/
+				setTimeout( function(){
+						$('#frm_post').submit();
+				}, 1500);
 				
-				$('#frm_post').submit();
 			}
       });
       
