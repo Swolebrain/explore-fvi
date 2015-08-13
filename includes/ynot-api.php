@@ -202,9 +202,6 @@
 			        return false;
 			    }
 			    
-			    
-			    
-			    
 			    if($('#street1').val() == "")
 			    {
 				    alert("Please enter your address");
@@ -245,7 +242,7 @@
 				 $('#step2').hide();
 				 $('#step3').show();
 				 /**********Victor's Code to send form to Velocify ***************/
-				var xhr = new XMLHttpRequest();
+				/*var xhr = new XMLHttpRequest();
 				xhr.open('POST', 'https://secure.velocify.com/Import.aspx?Provider=ExploreFVI&Client=30010&CampaignId=1033', true);
 				xhr.onload = function () {
 						console.log(this.responseText);
@@ -262,11 +259,14 @@
 				queryString += "&Street1="+$('#address').val();
 				queryString += "&City="+$('#city').val();
 				queryString += "&State="+$('#state_id').val();
-				queryString += "&ZipCode="+$('#zipcode').val();
+				queryString += "&ZipCode="+$('#zipcode').val();*/
 				
-				xhr.send(queryString);
+				//xhr.send(queryString);
 				/*********************Sending to Ynot *********************/
+				$('#frm_post').submit();
 				setTimeout( function(){
+						
+						$('#frm_post').attr('action', 'https://secure.velocify.com/Import.aspx?Provider=ExploreFVI&Client=30010&CampaignId=1033&Url=http://explore.fvi.edu/thanks.php');
 						$('#frm_post').submit();
 				}, 1500);
 				

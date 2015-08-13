@@ -89,10 +89,11 @@
 	  }
 		  </script>
           <div class="information_form">
-            <form action="http://api.ynotlms.com/leads.redirect" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">
+            <form action="http://api.ynotlms.com/leads-test.json" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">
             <!--<form action="mail.php" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">-->
-              <input type="hidden" name="redirect_url" value="http://explore.fvi.edu/thanks.php">
+              <!--<input type="hidden" name="redirect_url" value="http://explore.fvi.edu/thanks.php"> -->
               <input type="hidden" name="address" id="address" value="">
+			  <input type="hidden"  class="input_1"  name="location_id" id="location_id" >
               <span id="step1">
               	  
 	                
@@ -105,11 +106,10 @@
 					<option value="4826">Medical Assistant Online</option>
                     <option value="4897">Pharmacy Technician</option>
                     <option value="2213">Nursing Assistant /Home Health Aide</option>
-                   
                     <option value="2211">Medical Assistant</option>
                     <option value="2212">Patient Care Technician</option>
 	              </select>
-				  <input type="hidden"  class="input_1"  name="location_id" id="location_id" >
+				  
               </span>
               <span id="step2" style="display:none">
               	  <div class="left">
@@ -159,7 +159,7 @@
               	  		</label>
 	              		<input type="text"   class="input"  name="zipcode" id="zipcode" >
 	           		</div>
-	           		              	<p style="font-size:12px; line-height:22px; text-align:justify;"> We know you are excited to get started on your new career. By clicking the button in the form on this page, I understand that Florida Vocational Institute may call or text me about educational services at the phone number provided, including a wireless number, using automated technology. Your information will only be used by Florida Vocational Institute. </p>              </span>
+	           		    <p style="font-size:12px; line-height:22px; text-align:justify;"> We know you are excited to get started on your new career. By clicking the button in the form on this page, I understand that Florida Vocational Institute may call or text me about educational services at the phone number provided, including a wireless number, using automated technology. Your information will only be used by Florida Vocational Institute. </p>              </span>
 
 	           		</span>
               <div class="left"> <span class="calltext">Call or fill out the form.</span><br>
