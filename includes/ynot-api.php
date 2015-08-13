@@ -263,15 +263,32 @@
 				
 				//xhr.send(queryString);
 				/*********************Sending to Ynot *********************/
-				$('#frm_post').submit();
+				//$('#frm_post').submit();
+				$.ajax({
+						type: "POST",
+						url: $('#frm_post').attr('action'),
+						data: $("#frm_post").serialize(), // serializes the form's elements.
+						success: function(data)
+						{
+							console.log(data);
+							$('#frm_post').attr('action', 'https://secure.velocify.com/Import.aspx?Provider=ExploreFVI&Client=30010&CampaignId=1033&Url=http://explore.fvi.edu/thanks.php');
+							setProgramId();
+						    $('#frm_post').submit();
+						}
+					  });
+				
+				
 				setTimeout( function(){
 						
-						$('#frm_post').attr('action', 'https://secure.velocify.com/Import.aspx?Provider=ExploreFVI&Client=30010&CampaignId=1033&Url=http://explore.fvi.edu/thanks.php');
-						$('#frm_post').submit();
-				}, 1500);
+						
+				}, 2500);
 				
 			}
       });
+	  function setProgramId() {
+		var progText = jQuery('#program_id option:selected').text();
+		$('#program_id').value(progText);
+	  }
       
 }) (jQuery);
 
