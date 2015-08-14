@@ -89,7 +89,7 @@
 	  }
 		  </script>
           <div class="information_form">
-            <form action="http://api.ynotlms.com/leads-test.json" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">
+            <form action="http://api.ynotlms.com/leads.json" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">
             <!--<form action="mail.php" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">-->
               <!--<input type="hidden" name="redirect_url" value="http://explore.fvi.edu/thanks.php"> -->
               <input type="hidden" name="address" id="address" value="">

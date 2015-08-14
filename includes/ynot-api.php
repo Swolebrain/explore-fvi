@@ -274,20 +274,23 @@
 							$('#frm_post').attr('action', 'https://secure.velocify.com/Import.aspx?Provider=ExploreFVI&Client=30010&CampaignId=1033&Url=http://explore.fvi.edu/thanks.php');
 							setProgramId();
 						    $('#frm_post').submit();
+						},
+						error: function(){
+						    console.log("Sending to ynot failed");
+							$('#frm_post').attr('action', 'https://secure.velocify.com/Import.aspx?Provider=ExploreFVI&Client=30010&CampaignId=1033&Url=http://explore.fvi.edu/thanks.php');
+							setProgramId();
+						    $('#frm_post').submit();
 						}
 					  });
 				
 				
-				setTimeout( function(){
-						
-						
-				}, 2500);
+				
 				
 			}
       });
 	  function setProgramId() {
 		var progText = jQuery('#program_id option:selected').text();
-		$('#program_id').value(progText);
+		$('#program_id').val(progText);
 	  }
       
 }) (jQuery);
