@@ -93,6 +93,7 @@
             <!--<form action="mail.php" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">-->
               <!--<input type="hidden" name="redirect_url" value="http://explore.fvi.edu/thanks.php"> -->
               <input type="hidden" name="address" id="address" value="">
+              <input type="hidden" name="min_validation" value="yes">
 			  <input type="hidden"  class="input_1"  name="location_id" id="location_id" >
               <span id="step1">
               	  

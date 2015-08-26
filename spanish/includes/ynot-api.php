@@ -2,37 +2,18 @@
 
 (function($) {
 
-     /*    $.getJSON("https://api.ynotlms.com/locations.json?uid=515&apikey=892d04ed15-lzojy2zeux-ujfhng60&jsoncallback=?",
-           function(data) {
-        var sel = $("#location_id");
-        sel.empty();
-        sel.append('<option value="">*Please choose a campus of interest</option>');
-        $.each(data, function(i,item){
-          sel.append('<option value="' + item.id + '">' + item.title + '</option>');
-        });
-         });
-
-        $("#location_id").change(function(){
-        var selectedValue = $(this).find(":selected").val();
-        var sel = $("#program_id");
-        var sel_edu = $("#level_of_education_id");
-        sel_edu.empty();
-        sel.empty();
-        $.getJSON("https://api.ynotlms.com/locations.json?uid=403&apikey=0cfccff1d9-udvlrkwitc-5ogberhf&jsoncallback=?",
-             function(data) {
-          var sel = $("#program_id");
-          $.each(data, function(i,item){
-            if(item.id == selectedValue ){
-              sel.append('<option value="">Select Program</option>');
-              $.each(item.programs, function(i,program){
-                sel.append('<option value="' + program.id + '">' + program.title + '</option>');
-              });
-              return false;
-            }
-          });
-           });
-
-      }); */
+     /*
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+	  *    THIS FILE IS NOT USED ANYMORE, SEE MULTILANG VERSION IN THE TOP LEVEL INCLUDES FOLDER
+     */
       
 	
 		$("#h_step1").click(function(){

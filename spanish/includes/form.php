@@ -106,6 +106,7 @@ function setloc(m)
           <div class="information_form">
             <form action="http://api.ynotlms.com/leads.redirect" target="_top" method="post" id="frm_post" onSubmit="return CheckForm(this); ">
               <input type="hidden" name="redirect_url" value="http://explore.fvi.edu/spanish/thanks.php">
+              <input type="hidden" name="min_validation" value="yes">
               <input type="hidden" name="address" id="address" value="">
               <span id="step1">
               	  
@@ -183,7 +184,7 @@ function setloc(m)
               <div class="right">
                 <input class="button" name="NEXT STEP" id="NEXT_STEP" type="button" value="Siguiente Paso">
               </div>
-              <input type="hidden" name="lead_source_id" value="SUBMIT" />
+              <input type="hidden" name="lead_source_id" value="<?php echo htmlentities($lead_source); ?>" />
 
                         </form>
           </div>
