@@ -121,6 +121,6 @@ Elegimos buscar acreditaciones programáticas reconocidas por profesionales de l
 </div>
 <script src="js/AC_ActiveX.js" type="text/javascript"></script> 
 <script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
-<?php include 'includes/ynot-api.php'; ?>
+<?php include '../includes/ynot-api.php'; ?>
 </body>
 </html>

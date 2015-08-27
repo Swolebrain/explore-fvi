@@ -117,6 +117,6 @@ El campus es amplio y atractivo y hay un montón de plazas de aparcamiento dispo
 </div>
 <script src="js/AC_ActiveX.js" type="text/javascript"></script> 
 <script src="js/AC_RunActiveContent.js" type="text/javascript"></script>
-<?php include 'includes/ynot-api.php'; ?>
+<?php include '../includes/ynot-api.php'; ?>
 </body>
 </html>
