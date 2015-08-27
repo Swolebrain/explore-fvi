@@ -1,1 +1,4 @@
-<?php include '../../includes/ynot-api.php'; ?>
+<!--
+This file is no longer used.
+
+-->
